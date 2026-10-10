@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Data Scientist portfolio — specializing in Machine Learning, Deep Learning, Python, SQL, and Power BI. Transforming raw data into actionable intelligence." />
+  <title>Srinivasa Rao Vedururu | Data Scientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <canvas id="matrix-canvas"></canvas>
+  <div class="grid-overlay"></div>
+  <nav id="navbar">
+    <div class="nav-logo"><span class="logo-bracket">[</span><span class="logo-text">SR</span><span
+        class="logo-bracket">]</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link">HOME</a></li>
+      <li><a href="#about" class="nav-link">ABOUT</a></li>
+      <li><a href="#experience" class="nav-link">EXPERIENCE</a></li>
+      <li><a href="#skills" class="nav-link">SKILLS</a></li>
+      <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+      <li><a href="#contact" class="nav-link">CONTACT</a></li>
+    </ul>
+    <div class="nav-status"><span class="status-dot"></span><span class="status-text">ONLINE</span></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <div class="hero-tag"><span class="tag-prefix">// ROLE:</span><span class="typing-text"
+          id="typing-role"></span><span class="cursor">|</span></div>
+      <h1 class="hero-name"><span class="name-line">Srinivasa Rao</span><span class="name-line accent">Vedururu</span>
+      </h1>
+      <p class="hero-subtitle">Turning chaos into clarity — one model at a time.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary" id="view-work-btn">VIEW WORK</a>
+        <a href="#contact" class="btn-secondary" id="contact-btn">CONTACT ME</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="data-orb">
+        <div class="orb-ring ring-1"></div>
+        <div class="orb-ring ring-2"></div>
+        <div class="orb-ring ring-3"></div>
+        <div class="orb-core">
+          <svg viewBox="0 0 120 120" class="brain-svg">
+            <defs>
+              <radialGradient id="nodeGrad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#00ffcc" />
+                <stop offset="100%" stop-color="#00b8ff" />
+              </radialGradient>
+            </defs>
+            <circle cx="60" cy="20" r="5" fill="url(#nodeGrad)" class="nn-node" />
+            <circle cx="30" cy="45" r="5" fill="url(#nodeGrad)" class="nn-node" />
+            <circle cx="60" cy="45" r="5" fill="url(#nodeGrad)" class="nn-node" />
+            <circle cx="90" cy="45" r="5" fill="url(#nodeGrad)" class="nn-node" />
+            <circle cx="20" cy="75" r="5" fill="url(#nodeGrad)" class="nn-node" />
+            <circle cx="50" cy="75" r="5" fill="url(#nodeGrad)" class="nn-node" />
+            <circle cx="80" cy="75" r="5" fill="url(#nodeGrad)" class="nn-node" />
+            <circle cx="100" cy="75" r="5" fill="url(#nodeGrad)" class="nn-node" />
+            <circle cx="40" cy="100" r="5" fill="url(#nodeGrad)" class="nn-node" />
+            <circle cx="80" cy="100" r="5" fill="url(#nodeGrad)" class="nn-node" />
+            <line x1="60" y1="20" x2="30" y2="45" stroke="#00ffcc" stroke-width="1" opacity="0.4" />
+            <line x1="60" y1="20" x2="60" y2="45" stroke="#00ffcc" stroke-width="1" opacity="0.4" />
+            <line x1="60" y1="20" x2="90" y2="45" stroke="#00ffcc" stroke-width="1" opacity="0.4" />
+            <line x1="30" y1="45" x2="20" y2="75" stroke="#00b8ff" stroke-width="1" opacity="0.4" />
+            <line x1="30" y1="45" x2="50" y2="75" stroke="#00b8ff" stroke-width="1" opacity="0.4" />
+            <line x1="60" y1="45" x2="50" y2="75" stroke="#00b8ff" stroke-width="1" opacity="0.4" />
+            <line x1="60" y1="45" x2="80" y2="75" stroke="#00b8ff" stroke-width="1" opacity="0.4" />
+            <line x1="90" y1="45" x2="80" y2="75" stroke="#00b8ff" stroke-width="1" opacity="0.4" />
+            <line x1="90" y1="45" x2="100" y2="75" stroke="#00b8ff" stroke-width="1" opacity="0.4" />
+            <line x1="20" y1="75" x2="40" y2="100" stroke="#00ffcc" stroke-width="1" opacity="0.4" />
+            <line x1="50" y1="75" x2="40" y2="100" stroke="#00ffcc" stroke-width="1" opacity="0.4" />
+            <line x1="80" y1="75" x2="80" y2="100" stroke="#00ffcc" stroke-width="1" opacity="0.4" />
+            <line x1="100" y1="75" x2="80" y2="100" stroke="#00ffcc" stroke-width="1" opacity="0.4" />
+          </svg>
+        </div>
+        <div class="floating-chips">
+          <span class="chip chip-1">Python</span>
+          <span class="chip chip-2">Pytorch</span>
+          <span class="chip chip-3">SQL</span>
+          <span class="chip chip-4">Power BI</span>
+          <span class="chip chip-5">scikit-learn</span>
+          <span class="chip chip-6">Excel / VBA</span>
+          <span class="chip chip-7">LLM</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">ABOUT <span class="accent">ME</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-code">
+        <div class="terminal-block">
+          <div class="terminal-bar"><span class="t-dot red"></span><span class="t-dot yellow"></span><span
+              class="t-dot green"></span><span class="t-title">about.py</span></div>
+          <div class="terminal-body">
+            <p><span class="t-kw">class</span> <span class="t-cls">DataScientist</span>:</p>
+            <p>&nbsp;&nbsp;<span class="t-kw">def</span> <span class="t-fn">__init__</span>(self):</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="t-str">"Srinivasa Rao Vedururu"</span></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;self.role = <span class="t-str">"Data Scientist"</span></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;self.passion = <span class="t-str">"Failing and Learning"</span></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;self.tools = [<span class="t-str">"Python"</span>, <span
+                class="t-str">"SQL"</span>, <span class="t-str">"Power BI"</span>,<span
+                class="t-str">"Excel",</span><span class="t-str">"LLM"</span>]
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;self.contribution = <span class="t-num">200 %</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="about-desc">I'm an AI & Data Science undergraduate passionate about Data Analytics, Machine Learning,
+          Artificial Intelligence, and solving real-world problems. I use Python, SQL, and Power BI to analyze data,
+          build predictive models, and transform complex datasets into meaningful insights. I'm always eager to learn
+          new technologies, develop impactful solutions, and contribute my best to a team while continuously growing my
+          skills.</p>
+        <p class="about-desc">From neural networks to SQL queries, I thrive at the intersection of mathematics,
+          programming, and business intelligence.</p>
+        <div class="about-badges"><span class="badge">B.Tech in Artificial Intelligence and Data Science</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section experience">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">WORK <span class="accent">EXPERIENCE</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="experience-timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="experience-card">
+          <div class="exp-top">
+            <div>
+              <h3 class="exp-role">Data Science Intern</h3>
+              <p class="exp-company">// Evoastra</p>
+            </div>
+            <div class="exp-badge-group">
+              <span class="exp-period">JUNE 2025 – AUGUST 2025</span>
+              <span class="exp-type">INTERNSHIP</span>
+            </div>
+          </div>
+          <ul class="exp-points">
+            <li>Spearheaded exploratory data analysis (EDA) and automated data cleaning pipelines using Python (Pandas,
+              NumPy) and SQL, preparing high-quality datasets for modeling.</li>
+            <li>Built and evaluated supervised machine learning models with Scikit-learn, implementing feature
+              engineering and hyperparameter tuning to deliver actionable predictive insights.</li>
+            <li>Designed interactive Power BI business intelligence dashboards and KPI reports, translating complex
+              analytics into clear visual narratives for decision-making.</li>
+            <li>Collaborated in agile development workflows, version-controlled codebases with Git/GitHub, and explored
+              automated analytics workflows to streamline reporting.</li>
+          </ul>
+          <div class="exp-tech">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">SQL</span>
+            <span class="tech-pill">Machine Learning</span>
+            <span class="tech-pill">Pandas</span>
+            <span class="tech-pill">NumPy</span>
+            <span class="tech-pill">Scikit-learn</span>
+            <span class="tech-pill">Power BI</span>
+            <span class="tech-pill">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <div class="section-title-wrap">
+        <span class="section-pre-tag">// TECHNOLOGIES</span>
+        <h2 class="section-title">My Tech <span class="accent">Stack</span></h2>
+      </div>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- Interactive Category Filters -->
+    <div class="tech-filter-bar" role="tablist" aria-label="Technology category filters">
+      <button class="tech-filter-btn active" data-category="all" role="tab" aria-selected="true" tabindex="0">
+        All <span class="tech-count-badge">21</span>
+      </button>
+      <button class="tech-filter-btn" data-category="programming" role="tab" aria-selected="false" tabindex="-1">
+        Programming <span class="tech-count-badge">2</span>
+      </button>
+      <button class="tech-filter-btn" data-category="data-science" role="tab" aria-selected="false" tabindex="-1">
+        Data Science &amp; Analytics <span class="tech-count-badge">6</span>
+      </button>
+      <button class="tech-filter-btn" data-category="ai-machine-learning" role="tab" aria-selected="false" tabindex="-1">
+        AI &amp; Machine Learning <span class="tech-count-badge">7</span>
+      </button>
+      <button class="tech-filter-btn" data-category="tools" role="tab" aria-selected="false" tabindex="-1">
+        Tools &amp; Platforms <span class="tech-count-badge">6</span>
+      </button>
+    </div>
+
+    <!-- Responsive Technology Cards Grid -->
+    <div class="tech-cards-grid" id="tech-cards-grid" role="region" aria-label="Technologies list" aria-live="polite">
+      <!-- Dynamically populated by TECH_STACK_DATA in script.js -->
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <div class="section-title-wrap">
+        <span class="section-pre-tag">// PORTFOLIO SHOWCASE</span>
+        <h2 class="section-title">FEATURED <span class="accent">PROJECTS</span></h2>
+      </div>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+      <!-- Project 1: PPE Detection -->
+      <article class="project-card" id="project-ppe">
+        <div class="project-glow"></div>
+        <div class="project-header">
+          <span class="project-type">COMPUTER VISION • DEEP LEARNING</span>
+          <div class="project-links">
+            <a href="https://github.com/srinivas-vedururu/PPE-Detection-using-Deep-Learning" target="_blank" rel="noopener noreferrer" class="project-link"
+              aria-label="GitHub Repository for PPE Detection" title="GitHub Repository">GH</a>
+          </div>
+        </div>
+        <h3 class="project-title">PPE Detection Using Deep Learning</h3>
+        <p class="project-desc">Developed a YOLOv8-based object detection system trained on 2,800+ construction-site
+          images to detect 10 classes, including hardhats, masks, safety vests, personnel, vehicles, and machinery.
+          Trained and evaluated a custom YOLOv8 Nano model using validation metrics, confusion matrix, and
+          precision-recall analysis for automated PPE compliance monitoring.</p>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">YOLOv8</span>
+          <span class="tech-pill">Deep Learning</span>
+          <span class="tech-pill">Computer Vision</span>
+          <span class="tech-pill">Neural Networks</span>
+          <span class="tech-pill">Kaggle</span>
+        </div>
+        <div class="project-metric">
+          <span class="metric-highlight">2,800+ Images</span>
+          <span class="metric-sep"> / </span>
+          <span class="metric-highlight">10 Safety Classes</span>
+        </div>
+      </article>
+
+      <!-- Project 2: Flight Delay Analysis -->
+      <article class="project-card" id="project-flights">
+        <div class="project-glow"></div>
+        <div class="project-header">
+          <span class="project-type">DATA ANALYTICS • STATISTICAL EDA</span>
+          <div class="project-links">
+            <a href="https://github.com/srinivas-vedururu/Advance-Flight-Delay-Analysis" target="_blank" rel="noopener noreferrer" class="project-link"
+              aria-label="GitHub Repository for Flight Delay Analysis" title="GitHub Repository">GH</a>
+          </div>
+        </div>
+        <h3 class="project-title">Advanced Flight Delay Analysis</h3>
+        <p class="project-desc">Conducted exploratory data analysis (EDA) on 336,776 NYC flight records to identify
+          delay patterns across airports, airlines, time periods, seasons, and routes, uncovering key operational trends
+          and reliability insights. Performed data cleaning, statistical hypothesis testing, correlation analysis, and
+          interactive visualizations.</p>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Pandas</span>
+          <span class="tech-pill">NumPy</span>
+          <span class="tech-pill">Plotly</span>
+          <span class="tech-pill">SciPy</span>
+          <span class="tech-pill">Jupyter Notebook</span>
+        </div>
+        <div class="project-metric">
+          <span class="metric-highlight">336,776 Records</span>
+          <span class="metric-sep"> / </span>
+          <span class="metric-highlight">Hypothesis Testing</span>
+        </div>
+      </article>
+
+      <!-- Project 3: Movie Recommendation System -->
+      <article class="project-card" id="project-movies">
+        <div class="project-glow"></div>
+        <div class="project-header">
+          <span class="project-type">MACHINE LEARNING • RECOMMENDATION</span>
+          <div class="project-links">
+            <a href="https://github.com/srinivas-vedururu/Movie-Recommendation-System" target="_blank" rel="noopener noreferrer" class="project-link"
+              aria-label="GitHub Repository for Movie Recommendation System" title="GitHub Repository">GH</a>
+          </div>
+        </div>
+        <h3 class="project-title">Movie Recommendation System</h3>
+        <p class="project-desc">Developed a content-based recommendation engine for 10,000+ movies, leveraging 20+
+          metadata attributes to achieve 80%+ similarity accuracy using cosine similarity and Scikit-learn. Demonstrated
+          adaptability by iterating on user feedback to enhance recommendation accuracy, with an interactive Streamlit
+          user interface.</p>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Pandas</span>
+          <span class="tech-pill">Scikit-learn</span>
+          <span class="tech-pill">Streamlit</span>
+          <span class="tech-pill">Cosine Similarity</span>
+        </div>
+        <div class="project-metric">
+          <span class="metric-highlight">10,000+ Movies</span>
+          <span class="metric-sep"> / </span>
+          <span class="metric-highlight">80%+ Similarity Accuracy</span>
+        </div>
+      </article>
+
+      <!-- Project 4: SQL - Sales Analysis -->
+      <article class="project-card" id="project-sales-sql">
+        <div class="project-glow"></div>
+        <div class="project-header">
+          <span class="project-type">DATABASE • COHORT ANALYSIS</span>
+          <div class="project-links">
+            <a href="https://github.com/srinivas-vedururu/SQL_Project" target="_blank" rel="noopener noreferrer" class="project-link"
+              aria-label="GitHub Repository for SQL Sales Analysis" title="GitHub Repository">GH</a>
+          </div>
+        </div>
+        <h3 class="project-title">SQL - Sales &amp; Cohort Analysis</h3>
+        <p class="project-desc">Analyzed 50,000+ sales records using optimized PostgreSQL queries, reducing query
+          execution time by 25%. Conducted segmentation and cohort analysis, identifying 15% higher retention potential
+          for targeted customer groups to provide clear commercial intelligence.</p>
+        <div class="project-tech">
+          <span class="tech-pill">PostgreSQL</span>
+          <span class="tech-pill">SQL</span>
+          <span class="tech-pill">DBeaver</span>
+          <span class="tech-pill">pgAdmin</span>
+          <span class="tech-pill">Cohort Analysis</span>
+        </div>
+        <div class="project-metric">
+          <span class="metric-highlight">50,000+ Records</span>
+          <span class="metric-sep"> / </span>
+          <span class="metric-highlight">25% Faster Query Time</span>
+        </div>
+      </article>
+
+      <!-- Project 5: Power BI - Data Jobs Dashboard -->
+      <article class="project-card span-2" id="project-datajobs-bi">
+        <div class="project-glow"></div>
+        <div class="project-header">
+          <span class="project-type">BUSINESS INTELLIGENCE • DATA MODELING</span>
+          <div class="project-links">
+            <a href="https://github.com/srinivas-vedururu/Power-BI-Project-2" target="_blank" rel="noopener noreferrer" class="project-link"
+              aria-label="GitHub Repository for Data Jobs Dashboard" title="GitHub Repository">GH</a>
+          </div>
+        </div>
+        <h3 class="project-title">Power BI - Data Jobs Analysis Dashboard</h3>
+        <p class="project-desc">Built an interactive Power BI dashboard for 479K global data-job postings, analyzing job
+          demand, skill popularity, salary trends, and geographic distribution. Implemented DAX measures, Power Query
+          transformations, KPI cards, slicers, and dynamic drill-through to enable role- and country-level analysis of
+          salaries, skills, remote work, education, and job platforms.</p>
+        <div class="project-tech">
+          <span class="tech-pill">Power BI</span>
+          <span class="tech-pill">DAX</span>
+          <span class="tech-pill">Power Query</span>
+          <span class="tech-pill">Data Modeling</span>
+          <span class="tech-pill">Data Visualization</span>
+        </div>
+        <div class="project-metric">
+          <span class="metric-highlight">479K Global Postings</span>
+          <span class="metric-sep"> / </span>
+          <span class="metric-highlight">Dynamic Role &amp; Country Drill-Through</span>
+        </div>
+      </article>
+    </div>
+
+    <!-- GitHub Showcase Call to Action -->
+    <div class="projects-github-cta">
+      <span class="cta-badge">// EXPLORE ALL REPOSITORIES</span>
+      <h3 class="cta-title">Want to see more of my work?</h3>
+      <p class="cta-subtitle">Check out my GitHub for complete source code, datasets, exploratory notebooks, and ongoing
+        machine learning experiments.</p>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-primary github-cta-btn"
+        id="github-more-btn">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+        </svg>
+        <span>VISIT GITHUB FOR MORE</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title">GET IN <span class="accent">TOUCH</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-links">
+          <div class="contact-email-row">
+            <a href="mailto:srinivasvedururu@gmail.com" class="contact-item contact-email-link" id="email-link"><span
+                class="contact-icon" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.2-.25 6.8 5.25 6.8-5.25H5.2Zm13.55 1.3-6.19 4.78a1 1 0 0 1-1.12 0L5.25 7.8v9.45c0 .41.34.75.75.75h12c.41 0 .75-.34.75-.75V7.8Z"/></svg></span><span class="contact-label">srinivasvedururu@gmail.com</span></a>
+            <button class="copy-email-btn" type="button" id="copy-email-btn" data-copy="srinivasvedururu@gmail.com"
+              aria-label="Copy email address">Copy</button>
+          </div>
+          <a href="https://www.linkedin.com/in/vedururu-srinivas-rao/" target="_blank" class="contact-item" id="linkedin-link"><span
+              class="contact-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1ZM5.5 9.76h2.9v8.74H5.5V9.76Zm4.67 0h2.77v1.2h.04c.39-.73 1.33-1.5 2.74-1.5 2.93 0 3.47 1.93 3.47 4.43v6.61h-2.9v-6.2c0-1.48-.03-3.38-2.06-3.38-2.06 0-2.38 1.61-2.38 3.26v6.32H10.17V9.76Z"/></svg></span><span class="contact-label">LinkedIn Profile</span></a>
+          <a href="https://github.com/srinivas-vedururu" target="_blank" class="contact-item" id="github-link"><span
+              class="contact-icon" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.22c0 4.51 2.87 8.34 6.84 9.68.5.09.68-.22.68-.49 0-.24-.01-.87-.01-1.7-2.78.61-3.37-1.34-3.37-1.34-.46-1.18-1.11-1.49-1.11-1.49-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.9 1.54 2.36 1.1 2.93.84.09-.66.35-1.1.64-1.35-2.22-.25-4.55-1.11-4.55-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.28.1-2.67 0 0 .85-.27 2.78 1.04A9.67 9.67 0 0 1 12 6.86c.86 0 1.73.12 2.54.35 1.92-1.31 2.76-1.04 2.76-1.04.56 1.39.21 2.42.1 2.67.64.7 1.02 1.59 1.02 2.68 0 3.85-2.34 4.69-4.57 4.94.36.31.68.92.68 1.87 0 1.35-.01 2.44-.01 2.77 0 .27.18.59.69.49A10.2 10.2 0 0 0 22 12.22C22 6.58 17.52 2 12 2Z"/></svg></span><span class="contact-label">GitHub Profile</span></a>
+
+          <div class="resume-selector" aria-label="Resume profile selector">
+            <p class="resume-selector-label">SELECT RESUME PROFILE</p>
+            <div class="resume-profile-options" role="tablist" aria-label="Resume role selection">
+              <button class="resume-profile-btn active" type="button" data-profile="data-analyst" aria-pressed="true">
+                Data Analyst
+              </button>
+              <button class="resume-profile-btn" type="button" data-profile="data-scientist" aria-pressed="false">
+                Data Scientist
+              </button>
+              <button class="resume-profile-btn" type="button" data-profile="ai-ml" aria-pressed="false">
+                AI ML
+              </button>
+            </div>
+            <a href="#" class="contact-item resume-download" id="resume-link" download="resume-data-analyst.html"><span
+                class="contact-icon">PDF</span><span class="contact-label">Download Data Analyst Resume</span></a>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group"><label for="form-name" class="form-label">NAME</label><input type="text" id="form-name"
+            name="name" class="form-input" placeholder="Tony Stark" required /></div>
+        <div class="form-group"><label for="form-email" class="form-label">EMAIL</label><input type="email"
+            id="form-email" name="email" class="form-input" placeholder="stark@example.com" required /></div>
+        <div class="form-group"><label for="form-message" class="form-label">MESSAGE</label><textarea id="form-message"
+            name="message" class="form-input form-textarea" placeholder="Type your message here..."
+            required></textarea></div>
+        <button type="submit" class="btn-primary btn-full" id="submit-btn">SEND MESSAGE</button>
+        <div class="form-success" id="form-success" role="status" aria-live="polite" hidden></div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="footer-logo">[SR]</span>
+      <p class="footer-text">2026 Srinivasa Rao Vedururu - Data Scientist</p>
+      <p class="footer-sub">Built with passion and caffeine</p>
+    </div>
+    <div class="footer-line"></div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
